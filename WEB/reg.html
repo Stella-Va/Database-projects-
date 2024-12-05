@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel= "stylesheet" href="styles.css"
+</head>
+<body>
+    <div class="container">
+        <h2>Register as a Farmer or Entrepreneur</h2>
+        <form action = "/register" method ="POST">
+           
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+           
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" required>
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+           
+            <label for="role">Role:</label>
+            <select id="role" name="role" required>
+                <option value="farmer">Farmer</option>
+                <option value="entrepreneur">Entrepreneur</option>
+            </select>
+
+            <label for="location">Location:</label>
+            <input type="location" id="location" name="location" required>
+
+            <label for="contact_number">Contact Number</label>
+            <input type="tel" id="contact_number" name= "contact_number" required>
+
+            <button type="submit">Register</button>
+        </form>
+        <p>Already have an account? <a href="/login">Login here</a></p>
+    </div>
+</body>
+</html>
